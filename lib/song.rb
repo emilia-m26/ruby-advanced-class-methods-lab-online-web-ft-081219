@@ -97,7 +97,7 @@ class Song
     song = self.new 
     song.name = name 
     song
-    @@all << name
+    @@all << song
   
   end
  
