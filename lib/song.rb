@@ -108,7 +108,7 @@ class Song
     if @all.detect do |song| song.name == name
       song
     else
-      self.create_by_name
+      @@all.create_by_name
     end
   end
  
