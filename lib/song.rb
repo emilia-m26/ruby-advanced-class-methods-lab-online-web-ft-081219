@@ -96,7 +96,9 @@ class Song
   def self.create_by_name(name)
     song = self.new 
     song.name = name 
-    name.save  
+    song
+    @@all << name
+  
   end
  
 end
