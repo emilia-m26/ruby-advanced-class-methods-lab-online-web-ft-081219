@@ -101,7 +101,7 @@ class Song
   end
   
   def self.find_by_name(name)
-    @@all.each {|person| person.name == name}
+    @@all.map {|person| person.name == name}
   end
  
 end
