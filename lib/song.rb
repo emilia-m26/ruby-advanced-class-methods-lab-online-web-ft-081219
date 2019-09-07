@@ -105,34 +105,7 @@ class Song
   end
   
   def self.find_or_create_by_name(name)
-    if @all.detect do |song| song.name == name
-      song
-    else
-      @@all.create_by_name
-      song
-    end
+    
   end
-end
  
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
