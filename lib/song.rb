@@ -81,6 +81,12 @@ class Song
     self.class.all << self
   end
  
+ def self.create(song)
+   song = self.new 
+   song.save
+   song 
+  end
+ 
 end
 
 
