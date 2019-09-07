@@ -109,6 +109,7 @@ class Song
       song
     else
       @@all.create_by_name
+      song
     end
   end
  
