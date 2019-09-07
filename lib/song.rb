@@ -101,7 +101,7 @@ class Song
   end
   
   def self.find_by_name(name)
-    self.detect {|person| person.name == name}
+    self.select {|person| person.name == name}
   end
  
 end
