@@ -101,7 +101,7 @@ class Song
   end
   
   def self.find_by_name(name)
-    self.collect {|person| person.name == name}
+    @@all.collect {|person| person.name == name}
   end
  
 end
